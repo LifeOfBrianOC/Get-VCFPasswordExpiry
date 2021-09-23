@@ -1,2 +1,2 @@
-# checkVCFPasswordExpiry
-Function to check expiry of VCF user passwords
+# Get-VCFPasswordExpiry
+Function to get expiry of VCF user passwords
