@@ -31,7 +31,7 @@ Function Get-VCFPasswordExpiry
         [Parameter (Mandatory = $true)] [ValidateNotNullOrEmpty()] [String]$fqdn,
         [Parameter (Mandatory = $true)] [ValidateNotNullOrEmpty()] [String]$username,
         [Parameter (Mandatory = $true)] [ValidateNotNullOrEmpty()] [String]$password,
-        [Parameter (Mandatory = $false)] [ValidateSet("VCENTER", "PSC", "ESXI", "BACKUP", "NSXT_MANAGER", "NSXT_EDGE", "VRSLCM", "WSA", "VROPS", "VRLI", "VRA")] [ValidateNotNullOrEmpty()] [String]$resourceType
+        [Parameter (Mandatory = $false)] [ValidateSet("VCENTER", "PSC", "ESXI", "BACKUP", "NSXT_MANAGER", "NSXT_EDGE", "VRSLCM", "WSA", "VROPS", "VRLI", "VRA", "VXRAIL_MANAGER")] [ValidateNotNullOrEmpty()] [String]$resourceType
     )
 # Request an SDDC manager Token
 Request-VCFToken -fqdn $fqdn -username $username -password $password
